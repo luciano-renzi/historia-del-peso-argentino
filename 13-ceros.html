@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" href="/static/img/icon.png">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <meta charset="utf-8">
+    <meta name="description" content="Historia del Peso Argentino, 13 ceros">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>13 Ceros</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2M9N6BYST"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-B2M9N6BYST');
+    </script>
+
+    <script src="/static/js/main.js"></script>
+
+    <style>
+
+        #comparison-container {
+            max-width: 700px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #comparison-container > div {
+            text-align: center;
+        }
+
+        #equalChar {
+            font-size: 3rem;
+        }
+
+        #comparison-container .value {
+            font-size: 2.5rem;
+        }
+
+        #comparison-container .from-to {
+            color: var(--color-text-secondary);
+        }
+
+        #comparison-container .from-to {
+            color: var(--color-text-secondary);
+        }
+
+        #comparison-container .image {
+            text-align: center;
+        }
+
+        #comparison-container .image img {
+            /* margin-top: -110px; */
+            opacity: 0.15;
+            /* height: 150px; */
+            margin-top: -140px;
+            height: 200px;
+        }
+
+        #equalChar {
+            padding-left: 50px;
+            padding-right: 50px
+        }
+
+        @media (max-width: 775px) {
+
+            #comparison-container {
+
+                flex-direction: column;
+            }
+
+            #comparison-container > div {
+                text-align: center;
+            }
+
+            #comparison-container #peso-moneda-corriente .from-to {
+                text-align: center;
+            }
+
+            #equalChar {
+                padding-bottom: 50px
+            }
+
+            #comparison-container .image img {
+                margin-top: -115px;
+                opacity: 0.15;
+                height: 160px;
+            }
+
+            #comparison-container .value {
+                font-size: 2rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body class="lightMode">
+    <script>
+        setThemeOnLoad();
+    </script>
+
+    <header>
+        <nav>
+            <a href="/"><img alt="Logo" src="/static/img/peso.png" height="70"></a>
+            <ul>
+                <li><a href="#" onclick="toggleDarkMode();" id="colorToggle">
+                    <svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_nQuB"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="navigation-links">
+            <a href="/bonos-patacon-y-lecop.html" class="previous-link">⟨ Anterior</a>
+            <a href="/la-impresion.html" class="next-link">Siguiente ⟩</a>
+        </div>
+
+        <h1>13 Ceros</h1>
+
+        <p>
+            Al peso moneda nacional que rigió hasta 1969 se le terminaron tachando 13 ceros hasta llegar al peso actual.
+        </p>
+        <!-- En la actualidad, con el precio del dólar acercándose a los $300 pesos, se le podrían sacar dos ceros más. -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div id="comparison-container">
+            <div id="peso-moneda-corriente">
+                <div class="value">$10.000.000.000.000</div>
+                <div class="from-to">peso moneda nacional 1969</div>
+                <div class="image"><img src="/static/img/peso_moneda_nacional.jpg"></div>
+            </div>
+            
+            <div id="equalChar">=</div>
+            
+            <div>
+                <div class="value">$1</div>
+                <div class="from-to">peso actual</div>
+                <div class="image"><img src="/static/img/peso.png"></div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <div class="navigation-links navigation-links-bottom">
+            <a href="/bonos-patacon-y-lecop.html" class="previous-link">⟨ Anterior</a>
+            <a href="/la-impresion.html" class="next-link">Siguiente ⟩</a>
+        </div>
+
+    </main>
+    <footer>
+        <hr>
+        <p style="text-align: center">
+            <a href="https://github.com/etc" target="_blank" rel="noopener noreferrer" class="header-github-link"></a>
+        </p>
+    </footer>
+</body>
+</html>
