@@ -70,7 +70,7 @@
 
         <p>
             En 1890 se unifica la emisión por parte del gobierno nacional.
-            En 1929 la Argentina abandona el patrón oro***.
+            En 1929 la Argentina abandona el patrón oro.
             En 1935 se fundó el Banco Central de la República Argentina (BCRA) y éste asume el rol de emisión monetaria de la Nación.
         </p>
         
@@ -85,6 +85,8 @@
             <li><a href="https://es.wikipedia.org/wiki/Peso_Moneda_Nacional" target="_blank">es.wikipedia.org/wiki/Peso_Moneda_Nacional</a></li>
             <li><a href="https://www.cac.com.ar/data/documentos/16_Historia%20de%20la%20moneda%20argentina.pdf" target="_blank">
                 https://www.cac.com.ar/data/documentos/16_Historia de la moneda argentina.pdf</a></li>
+            <li><a href="https://www.depeco.econo.unlp.edu.ar/wp/wp-content/uploads/2017/05/doc28.pdf" target="_blank">
+                La Argentina y el abandono del patrón oro</a></li>
         </ul>
 
     </main>
@@ -94,5 +96,35 @@
             <a href="https://github.com/luciano-renzi/historia-del-peso-argentino" target="_blank" rel="noopener noreferrer" class="header-github-link"></a>
         </p>
     </footer>
+
+    <script>
+        let imageList = [
+            '/static/img/emprestito-9-de-julio.jpg',
+            '/static/img/peso-ley.jpg',
+            '/static/img/peso-argentino.jpg',
+            '/static/img/100-australes.jpg',
+            '/static/img/peso-ex-convertible.jpg',
+            '/static/img/crisis-2001-corralito.webp',
+            '/static/img/patacon.jpg',
+            '/static/img/crisis-2001-corralito.webp'
+        ];
+
+        function loadImages() {
+            var hiddenCache = document.createElement("div");
+            hiddenCache.style.display = "none";
+            document.body.appendChild(hiddenCache);
+            // or for loop if ECMA 3
+            imageList.forEach(function(urlStr){
+                console.log(urlStr)
+                var hiddenImg = document.createElement("img");
+                hiddenImg.src = urlStr;
+                // hiddenCache.appendChild(hiddenImg)
+            });
+        }
+
+        setTimeout(() => {
+            loadImages();
+        }, 2000);
+    </script>
 </body>
 </html>

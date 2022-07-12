@@ -60,25 +60,11 @@
 
             <ul style="list-style-type: none; padding: 0px;">
                 <li><a href="/13-ceros.html">13 Ceros</a></li>
-                <li><a href="/la-impresion.html">La Inpresión</a></li>
+                <li><a href="/la-emision.html">La Emisión</a></li>
                 <li><a href="/la-inflacion.html">La Inflación</a></li>
             </ul>
 
         </div>
-    <br>
-    
-    <img src="/static/img/primer-papel-moneda.jpg" loading="lazy" style="width: 0.1px; opacity:0.1">
-    <img src="/static/img/Cinco_pesos_moneda_corriente.jpg" loading="lazy" style="width: 0.1px; opacity:0.1">
-    <img src="/static/img/peso_moneda_nacional.jpg" loading="lazy" style="width: 0.1px; opacity:0.1">
-    <img src="/static/img/emprestito-9-de-julio.jpg" loading="lazy" style="width: 0.1px; opacity:0.1">
-    <img src="/static/img/peso-ley.jpg" loading="lazy" style="width: 0.1px; opacity:0.1">
-    <img src="/static/img/peso-argentino.jpg" loading="lazy" style="width: 0.1px; opacity:0.1">
-    <img src="/static/img/100-australes.jpg" loading="lazy" style="width: 0.1px; opacity:0.1">
-    <img src="/static/img/peso-ex-convertible.jpg" loading="lazy" style="width: 0.1px; opacity:0.1">
-    <img src="/static/img/crisis-2001-corralito.webp" loading="lazy" style="width: 0.1px; opacity:0.1">
-    <img src="/static/img/patacon.jpg" loading="lazy" style="width: 0.1px; opacity:0.1">
-    <img src="/static/img/crisis-2001-corralito.webp" loading="lazy" style="width: 0.1px; opacity:0.1">
-
     </main>
     
     <footer>
@@ -87,5 +73,38 @@
             <a href="https://github.com/luciano-renzi/historia-del-peso-argentino" target="_blank" rel="noopener noreferrer" class="header-github-link"></a>
         </p>
     </footer>
+    
+    <script>
+        let imageList = [
+            '/static/img/primer-papel-moneda.jpg',
+            '/static/img/Cinco_pesos_moneda_corriente.jpg',
+            '/static/img/peso_moneda_nacional.jpg',
+            '/static/img/emprestito-9-de-julio.jpg',
+            '/static/img/peso-ley.jpg',
+            '/static/img/peso-argentino.jpg',
+            '/static/img/100-australes.jpg',
+            '/static/img/peso-ex-convertible.jpg',
+            '/static/img/crisis-2001-corralito.webp',
+            '/static/img/patacon.jpg',
+            '/static/img/crisis-2001-corralito.webp'
+        ];
+
+        function loadImages() {
+            var hiddenCache = document.createElement("div");
+            hiddenCache.style.display = "none";
+            document.body.appendChild(hiddenCache);
+            // or for loop if ECMA 3
+            imageList.forEach(function(urlStr){
+                console.log(urlStr)
+                var hiddenImg = document.createElement("img");
+                hiddenImg.src = urlStr;
+                // hiddenCache.appendChild(hiddenImg)
+            });
+        }
+
+        setTimeout(() => {
+            loadImages();
+        }, 2000);
+    </script>
 </body>
 </html>
